@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+
+    <Style>
+        body{
+            background-color: gray;
+            color: white;
+            margin: 0px;
+
+        }
+
+        header>h1{
+            margin: 0px;
+            box-shadow: inset 0px 0px 10px 1px rgb(255, 255, 255);
+
+        }
+
+        header{
+            background-color: rgb(61, 61, 61);
+            color: white;
+            margin: 2px;
+            padding: 1px 15px;
+        }
+
+        nav{
+            background-color: rgb(49, 49, 49);
+            padding: 3px 7px;
+            box-shadow: 2px 5px 15px 1px rgba(0, 0, 0, 0.648);
+        }
+
+        nav>a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+
+        nav>a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: lightgray;
+            color: white;
+            margin: 10px;
+            padding: 1px 15px;
+            border-radius: 10px 3px;
+            box-shadow: 5px 5px 7px  rgba(0, 0, 0, 0.306);
+        }
+
+        article{
+            background-color: rgb(55, 58, 81);
+            padding: 1px;
+        }
+
+        article>aside{
+            background-color: rgb(41, 43, 59);
+            color: rgb(0, 0, 0);
+            text-align:right;
+        }
+
+
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+    </Style>
+
+</head>
+<body>
+<header>
+    <h1>Meu site</h1>
+        <nav>
+         <a href="#">Link</a>
+         <a href="#">Link</a>
+         <a href="#">Link</a>
+         <a href="#">Link</a>
+         <a href="#">Link</a>
+        </nav>
+</header>
+
+<main>
+    <section id="Noticias">
+        <p>Esporte, politica e Tecnologia</p>
+    </section>
+    <section id="conteudo">
+        <article>
+            <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ab! Sint enim eius quos reiciendis ab impedit reprehenderit odit facere, quisquam blanditiis eligendi minima iure at suscipit, ut fuga vitae!</p> 
+        </article>
+        <article>
+            <aside>Artigo de Gabriel Maciel.</aside>
+        </article>
+
+
+    </section>
+
+
+</main>
+
+
+<footer>
+    <p>Desenolvido por Gabriel Maciel.</p>
+
+
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="########" type="image/x-icon">
+    <title>Mideas</title>
+</head>
+<body>
+<h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou altero o tamanho
+    do seu navegador</p>
+ 
+<picture>
+
+    <source media="(max-width:300px )" srcset="imagens/imagem-pp.png" type="image/png">
+    <source media="(max-width:750px )" srcset="imagens/imagem-p.png" type="image/png">
+    <source media="(max-width:900px )" srcset="imagens/imagem-m.png" type="image/png">
+    <source media="(max-width: 1050px )" srcset="imagens/imagem-mg.png" type="image/png">
+    <img src="imagens/imagem-g.png" alt="Foto Grande">
+</picture>
+<h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+<audio preload="none" controls>
+    <source src="midea/musica-site-rap.mp3" type="audio/mpeg">
+    <source src="midea/musica-site-rap.ogg" type="audio/ogg">
+    <source src="midea/musica-site-rap.wav" type="audio/wav">
+    <p>Infelizmente seu navegador nâo consegue reproduzir audio.
+    <a href="midea/musica-site-rap.mp3">Clique aqui para baixar arquivo</a></p>
+
+</audio>
+</body> 
+</html>
