@@ -9,12 +9,31 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            background-color: rgba(211, 211, 211, 0.84);
+            border-radius: 8px 8px 0px 0px;
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bolder;    
+        }
+
+        thead> tr> th{
+            position: sticky;
+            top: -1px;
+            background-color: darkgray;
         }
 
         thead, tfoot{
             background-color: darkgray;
             color: black;
             font-size: 1.2em;
+        }
+
+        tbody> tr:nth-child(2n){
+            background-color: lightgrey;
         }
 
         th, td {
@@ -29,10 +48,11 @@
 </head>
 <body>
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -74,14 +94,31 @@
             <tr>
                 <td>Santa Catarina</td>
                 <td class="numero">6 248 436</td>
-        </tr>
+            </tr>
+            <tr>
+                <td>Goais</td>
+                <td class="numero">6 003 788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">6 574 789</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="numero">3 514 952</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="numero">3 766 528</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td class="numero"><strong>139 296 437</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>159 156 494</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugiat aspernatur ducimus cupiditate? At, ducimus. Doloremque culpa aspernatur fugiat, nam dolorem similique natus nostrum, placeat magni qui, voluptatum libero deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio molestiae eveniet neque suscipit laborum debitis accusamus obcaecati dignissimos labore sunt cupiditate quibusdam laudantium, aliquam culpa corrupti, dicta optio ex asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum modi ipsa beatae natus, itaque inventore perspiciatis aliquid sint eius quis quos dolorum vero ipsum voluptatem? Ipsa maxime doloribus minima molestias. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus cupiditate illum reiciendis harum, a reprehenderit? Eveniet assumenda vel dicta sunt odit numquam sequi rem quae nemo cum, dolore ea minus.</p>
 </body>
 </html>
